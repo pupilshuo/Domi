@@ -57,7 +57,7 @@ train_info_args = {
     ##############  lora模块
     'with_lora': True,  # 是否启用lora模块，这里必须要启动，不然小数据集下根本无法训练出好的效果
     'inference_mode': False, # 推理模型, 不需要手动设置
-    'r': 32, # 有多好的卡，就设置多大把
+    'r': 2, # 有多好的卡，就设置多大把
     'target_modules': ['dense','dense_h_to_4h','dense_4h_to_h','query_key_value'], # 尽量能lora的层都lora一下
     'target_dtype': '16',
     'lora_alpha': 32,
