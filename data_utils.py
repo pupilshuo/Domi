@@ -49,7 +49,7 @@ train_info_args = {
     'weight_decay': 0,
     'warmup_steps': 0,
     'output_dir': './output',
-    'max_seq_length': 2048, # 如果资源充足，推荐长度2048 与官方保持一致
+    'max_seq_length': 1024, # 如果资源充足，推荐长度2048 与官方保持一致
     'max_target_length': 100,  # 预测最大长度, 保留字段
     'use_fast_tokenizer': False,
     'do_lower_case': False,
@@ -57,7 +57,7 @@ train_info_args = {
     ##############  lora模块
     'with_lora': True,  # 是否启用lora模块，这里必须要启动，不然小数据集下根本无法训练出好的效果
     'inference_mode': False, # 推理模型, 不需要手动设置
-    'r': 2, # 有多好的卡，就设置多大把
+    'r': 16, # 有多好的卡，就设置多大把
     'target_modules': ['dense','dense_h_to_4h','dense_4h_to_h','query_key_value'], # 尽量能lora的层都lora一下
     'target_dtype': '16',
     'lora_alpha': 32,
