@@ -19,7 +19,7 @@
   "max_sequence_length": 2048,
   "model_type": "chatglm",
   "num_attention_heads": 32,
-  "num_layers": 1,
+  "num_layers": 14,
   "pad_token_id": 3,
   "position_encoding_2d": true,
   "pre_seq_len": null,
