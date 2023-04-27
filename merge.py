@@ -47,7 +47,7 @@ def main():
     start_id = 1
     converted_data = convert_to_target_format(merged_data, start_id)
 
-    save_json_to_file(converted_data, 'output/output.json')
+    save_json_to_file(converted_data, 'data/output.json')
 
 if __name__ == '__main__':
     main()
